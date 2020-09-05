@@ -1,0 +1,1 @@
+A rust library used to simulate poker (Texas Hold'em).

@@ -1,0 +1,10 @@
+[package]
+name = "poker"
+version = "0.1.0"
+description = "A crate to simulate poker (Texas Hold'em)"
+readme = "README.md"
+repository = "https://github.com/Mattherix/poker/"
+license = "GPL-3.0+"
+keywords = ["game", "poker"]
+authors = ["Mattherix <mattherix@protonmail.com>"]
+edition = "2018"
