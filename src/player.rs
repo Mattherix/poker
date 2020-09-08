@@ -1,8 +1,9 @@
 // The player struct
+use crate::card::Card;
 
-struct Player {
+pub struct Player {
     stack: u32,
-    private_cards: vec![Card],
+    private_cards: Vec<Card>,
     game_played: u32,
     flop_seen: u32
 }
