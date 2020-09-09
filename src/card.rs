@@ -5,8 +5,7 @@ pub enum Suit {
     Hearts,
     Diamonds,
     Spades,
-    Clubs,
-    
+    Clubs
 }
 pub struct Value(u8);
 impl Value {

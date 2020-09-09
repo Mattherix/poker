@@ -1,5 +1,5 @@
 #[cfg(test)]
-mod tests {
+mod test {
     use poker::card::{Card, Suit, Value};
     #[test]
     fn create_valid_card() {
