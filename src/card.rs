@@ -1,6 +1,5 @@
 // The cards used by the poker game
 use std::collections::HashSet;
-use self::Suit::*;
 
 #[derive(Eq, PartialEq, Hash)]
 pub enum Suit {
