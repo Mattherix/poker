@@ -10,20 +10,15 @@ pub struct Card {
     pub value: Value
 }
 impl Card {
-    pub fn new(suit: Suit, value: Value) -> Card {
-        Card {
-            suit: suit,
-            value: value
-        } 
-    }
     pub fn get_deck() -> HashSet<Card> {
         let mut deck: HashSet<Card> = HashSet::new();
         for suit in ["Hearts", "Diamonds", "Spades", "Clubs"].iter() {
             for value in 1..14 {
                 deck.insert(
-                    Card::new(
-                        Suit::new(suit), Value::new(value)
-                    )
+                    Card {
+                        suit: Suit::new(suit),
+                        value: Value::new(value)
+                    }
                 );
             }
         }

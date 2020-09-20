@@ -31,18 +31,20 @@ fn card_is_suit() {
     assert!(queen_of_diamonds.is_suit(Suit::Diamonds));
     assert!(king_of_spades.is_suit(Suit::Spades));
     assert!(queen_of_clubs.is_suit(Suit::Clubs));
-
-}
-#[test]
-#[should_panic]
-fn wrong_value_card(){
-    Card {
-        suit: Suit::Hearts,
-        value: Value::new(0)
-    };
-}
-#[test]
-fn it_works() {
-    assert_eq!(2 + 2, 4);
 }
 
+#[test]
+fn get_a_valid_deck() {
+    let deck = Card::get_deck();
+    for suit in ["Hearts", "Diamonds", "Spades", "Clubs"].iter() {
+        for value in 1..14 {
+            let card = Card {
+                suit: Suit::new(suit),
+                value: Value::new(value)
+            };
+            if !deck.contains(&card) {
+                panic!("{} {} is missing", value, suit);
+            }
+        }
+    }
+}
