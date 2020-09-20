@@ -1,4 +1,6 @@
-use poker::card::{Card, Suit, Value};
+use poker::suit::Suit;
+use poker::value::Value;
+use poker::card::Card;
 
 #[test]
 fn create_valid_card() {
