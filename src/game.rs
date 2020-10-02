@@ -9,7 +9,7 @@ pub struct Poker {
     button: usize,
     pot: u32,
     big_blind: u32,
-    ante: u32
+    ante: u32,
 }
 /* impl Poker {
     pub fn new(number_of_player: u32, buy_in: u32, big_blind: u32, ante: u32) -> Poker {
@@ -20,7 +20,7 @@ pub struct Poker {
 
         Poker {
             players: players,
-            
+
         }
     }
     pub fn new_empty_table() -> Poker {

@@ -1,6 +1,5 @@
 use poker::value::Value;
 
-
 #[test]
 fn create_valid_value() {
     for value in 1..14 {
