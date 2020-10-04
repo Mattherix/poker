@@ -1,6 +1,7 @@
 // The player struct
 use crate::card::Card;
 
+#[derive(Eq, PartialEq, Hash)]
 pub struct Player {
     stack: u32,
     private_cards: Vec<Card>,
